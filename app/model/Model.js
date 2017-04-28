@@ -38,7 +38,9 @@ exports.book = {
     currentNum: 0, //现有数量
     buyDate: Date,
     brief: '',
-    imageName: ''//图片文件的名称
+    imageName: '',//图片文件的名称,
+    ISBN : ',', //ISBN
+    addDate:Date //入库时间
     /**
      * Book_nun     int(11)
      * Book_name    varchar(20)

@@ -28,7 +28,9 @@ var insert = function(book, callback) {
         Current_num:    book.currentNum || 0,
         Buy_date:       book.buyDate    || new Date(),
         Brief:          book.brief      || '',
-        imageName:      book.imageName  || ''
+        imageName:      book.imageName  || '',
+        ISBN:           book.ISBN       || '',
+        Add_date:        book.addDate    || ''
     };
     console.log(obj);
     try {
@@ -85,7 +87,9 @@ var modify = function(book, callback) {
         Current_num:    book.currentNum || 0,
         Buy_date:       book.buyDate    || new Date(),
         Brief:          book.brief      || '',
-        imageName:      book.imageName  || ''
+        imageName:      book.imageName  || '',
+        ISBN:           book.ISBN       || '',
+        Add_date:       book.addDate    || ''
     };
 
     console.log(obj);

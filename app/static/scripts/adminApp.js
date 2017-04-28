@@ -72,6 +72,49 @@ adminApp.config(function($stateProvider, $urlRouterProvider) { //设置路由
             templateUrl: '/tpl/manageAccount.html',
             controller: 'manageAccount'
         })
+
+        //借阅图书
+        .state('admin.borrowBook',{
+            url:'borrowBook',
+            templateUrl :'/tpl/borrowBook.html',
+            controller: 'borrowBook'
+        })
+        //还书
+        .state('admin.returnBook',{
+            url:'returnBook',
+            templateUrl :'tpl/returnBook.html',
+            controller:'returnBook'
+        })
+        //添加读者
+        .state('admin.addUser',{
+            url:'addUser',
+            templateUrl :'tpl/addUser.html',
+            controller:'addUser'
+        })
+        //读者列表
+        .state('admin.userList',{
+            url:'userList',
+            templateUrl:'tpl/userList.html',
+            controller:'userList'
+        })
+        //借阅列表
+        .state('admin.borrowList',{
+            url:'borrowList',
+            templateUrl:'tpl/borrowList.html',
+            controller:'borrowList'
+        })
+        //添加读者类型
+        .state('admin.addReaderType',{
+            url:'addReaderType',
+            templateUrl:'tpl/addReaderType.html',
+            controller:'addReaderType'
+        })
+        //管理读者类型
+        .state('admin.seeAllReaderType',{
+            url:'seeAllReaderType',
+            templateUrl:'tpl/seeAllReaderType.html',
+            control:'seeAllReaderType'
+        })
         ;
 
     $urlRouterProvider.otherwise('/admin/addType'); //设置其他路径跳转到index
